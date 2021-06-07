@@ -12,7 +12,6 @@ export default function appReducer(state, action) {
         const myPokemonId = action.payload.pokemon.pokeId;
   
         const updatedMyPokemnons = state.myPokemons.map((myPokemon) => {
-          console.log(myPokemon.pokeId, myPokemonId)
           if (myPokemon.pokeId === myPokemonId) {
             return {
               ...myPokemon,

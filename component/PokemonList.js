@@ -53,7 +53,7 @@ export default function PokemonList() {
                 (
                     <>
                         <p>
-                            You got {catchedPokemonsState && catchedPokemonsState.length} owned pokemon, 
+                            You got {catchedPokemonsState ? catchedPokemonsState.length : 0} owned pokemon, 
                             <Link href={"/myPokemonList"}>
                                 <a style={{color: "#4d7aff"}}>See Now</a>
                             </Link>
@@ -94,9 +94,9 @@ export default function PokemonList() {
                         </Link>
                         <p>
                         Catched: {
-                            catchedPokemonsState && catchedPokemonsState.filter((catchedPokemon) => 
+                            catchedPokemonsState ? catchedPokemonsState.filter((catchedPokemon) => 
                                 catchedPokemon.id === pokemon.id
-                            ).length
+                            ).length : 0
                         }
                         </p>     
                     </div>
