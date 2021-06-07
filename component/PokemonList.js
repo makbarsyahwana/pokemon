@@ -53,7 +53,7 @@ export default function PokemonList() {
                 (
                     <>
                         <p>
-                            You got {catchedPokemonsState.length} owned pokemon, 
+                            You got {catchedPokemonsState && catchedPokemonsState.length} owned pokemon, 
                             <Link href={"/myPokemonList"}>
                                 <a style={{color: "#4d7aff"}}>See Now</a>
                             </Link>
