@@ -94,7 +94,7 @@ export default function PokemonList() {
                         </Link>
                         <p>
                         Catched: {
-                            catchedPokemonsState.filter((catchedPokemon) => 
+                            catchedPokemonsState && catchedPokemonsState.filter((catchedPokemon) => 
                                 catchedPokemon.id === pokemon.id
                             ).length
                         }
